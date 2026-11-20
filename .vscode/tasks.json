@@ -6,7 +6,8 @@
             "command": "clang",
             "args": [
                 "'@compile_flags.txt'", // `'` for Powershell
-                "${file}",
+                "src/main.c",
+                "src/singly_linked_list.c",
                 "-o",
                 "${workspaceFolder}/bin/${fileBasenameNoExtension}"
             ],
